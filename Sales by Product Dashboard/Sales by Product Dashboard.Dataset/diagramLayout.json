@@ -1,0 +1,99 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 578.42076746856333,
+            "y": 430.06378157071265
+          },
+          "nodeIndex": "dim_Currency",
+          "nodeLineageTag": "b3dfc036-331b-43d4-ae6a-b318fb2f6ddb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 89.801416956769344
+          },
+          "nodeIndex": "dim_Customer",
+          "nodeLineageTag": "28a4b14c-ab68-439f-8bb6-335e35024fcb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 155.96571650138026,
+            "y": 590.40755786526256
+          },
+          "nodeIndex": "dim_Product",
+          "nodeLineageTag": "f00d40da-e66c-483a-a1e1-c646fa826191",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 435.385783670611,
+            "y": -10
+          },
+          "nodeIndex": "dim_SalesTerritory",
+          "nodeLineageTag": "68db499e-6d19-4811-8a39-ca8e1144b78a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 294.20985082449579,
+            "y": 240.20281169377145
+          },
+          "nodeIndex": "fact_InternetSales",
+          "nodeLineageTag": "6a1f0ee2-b42f-4651-9f67-23b1a2a19511",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852.42076746856333,
+            "y": 276.20377893263128
+          },
+          "nodeIndex": "#Measures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Sales by Country Dashboard.Dataset"
+    },
+    "byConnection": null
+  }
+}
