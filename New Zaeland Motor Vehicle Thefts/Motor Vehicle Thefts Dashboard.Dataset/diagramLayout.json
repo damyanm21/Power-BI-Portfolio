@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 344,
+            "y": 22.5
+          },
+          "nodeIndex": "locations",
+          "nodeLineageTag": "f8c0e5f5-8b0a-474c-a880-af828c5a3212",
+          "size": {
+            "height": 201,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1143,
+            "y": 42.5
+          },
+          "nodeIndex": "make_details",
+          "nodeLineageTag": "bb93243b-3ac3-481a-863b-75ed10ecd30a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 749,
+            "y": 372
+          },
+          "nodeIndex": "stolen_vehicles",
+          "nodeLineageTag": "6ab29356-7840-42c0-a85e-d238a5d622c0",
+          "size": {
+            "height": 283,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
