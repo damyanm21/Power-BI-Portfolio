@@ -464,6 +464,22 @@
             "lineageTag": "c4bf49b7-52f8-48d2-b487-af3bb45db6df",
             "sourceColumn": "host_id",
             "summarizeBy": "none"
+          },
+          {
+            "name": "istant_bookalbe_fullname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "expression": "IF([instant_bookable] = \"t\", TRUE(), IF([instant_bookable] = \"f\", FALSE(), BLANK()))",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "isDataTypeInferred": true,
+            "lineageTag": "a60ced0b-61a2-4112-8553-f1e434e0555c",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "27ccc1bf-03db-479e-8651-a0044d3defb9",
