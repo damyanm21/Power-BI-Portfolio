@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 3614
+        "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 526,
-            "y": 3934.4131164550781
+            "x": 512,
+            "y": 76.413116455078125
           },
           "nodeIndex": "Dim_Listings",
           "nodeLineageTag": "27ccc1bf-03db-479e-8651-a0044d3defb9",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 1473,
-            "y": 4312.4131164550781
+            "x": 1459,
+            "y": 422.41311645507813
           },
           "nodeIndex": "Dim_Reviewers",
           "nodeLineageTag": "01d7ce99-8169-46d6-88a0-9a0ad0800115",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 1012,
-            "y": 4174.4131164550781
+            "x": 1001,
+            "y": 368.41311645507813
           },
           "nodeIndex": "Fact_Reviews",
           "nodeLineageTag": "df9f2a34-7f96-4af6-9d58-29701f6a1aed",
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 49,
-            "y": 3942.9710388183594
+            "x": 22,
+            "y": 216.97103881835938
           },
           "nodeIndex": "Dim_Hosts",
           "nodeLineageTag": "b427ac6e-252f-463b-8746-5923f3e077d1",
@@ -58,7 +58,7 @@
             "height": 270,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         }
       ],
       "name": "All tables",
