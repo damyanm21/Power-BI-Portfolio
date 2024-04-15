@@ -470,6 +470,33 @@
             "lineageTag": "a60ced0b-61a2-4112-8553-f1e434e0555c",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "Dim_Hosts.host_location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3fc5f60e-aca4-489b-a301-e4d3046bf75c",
+            "sourceColumn": "Dim_Hosts.host_location",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dim_Hosts.host_total_listings_count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55c8b0cf-f7e9-4cf0-8a0e-009a1937c774",
+            "sourceColumn": "Dim_Hosts.host_total_listings_count",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "27ccc1bf-03db-479e-8651-a0044d3defb9",
@@ -496,9 +523,11 @@
                 "    #\"Replaced latitude Values\" = Table.ReplaceValue(#\"Changed Column Types\",\".\",\",\",Replacer.ReplaceText,{\"latitude\"}),",
                 "    #\"Changed latitude  Type\" = Table.TransformColumnTypes(#\"Replaced latitude Values\",{{\"latitude\", type number}}),",
                 "    #\"Replaced longtitude Value\" = Table.ReplaceValue(#\"Changed latitude  Type\",\".\",\",\",Replacer.ReplaceText,{\"longitude\"}),",
-                "    #\"Changed longtitude Type\" = Table.TransformColumnTypes(#\"Replaced longtitude Value\",{{\"longitude\", type number}})",
+                "    #\"Changed longtitude Type\" = Table.TransformColumnTypes(#\"Replaced longtitude Value\",{{\"longitude\", type number}}),",
+                "    #\"Left Outer Join Dim_Listings and Dim_Hosts\" = Table.NestedJoin(#\"Changed longtitude Type\", {\"host_id\"}, Dim_Hosts, {\"host_id\"}, \"Dim_Hosts\", JoinKind.LeftOuter),",
+                "    #\"Expanded Dim_Hosts\" = Table.ExpandTableColumn(#\"Left Outer Join Dim_Listings and Dim_Hosts\", \"Dim_Hosts\", {\"host_location\", \"host_total_listings_count\"}, {\"Dim_Hosts.host_location\", \"Dim_Hosts.host_total_listings_count\"})",
                 "in",
-                "    #\"Changed longtitude Type\""
+                "    #\"Expanded Dim_Hosts\""
               ],
               "type": "m"
             }

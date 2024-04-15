@@ -16,10 +16,10 @@
           "nodeIndex": "Dim_Listings",
           "nodeLineageTag": "27ccc1bf-03db-479e-8651-a0044d3defb9",
           "size": {
-            "height": 754,
-            "width": 234
+            "height": 820,
+            "width": 247
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 192,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 2
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 270,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 3
         }
       ],
       "name": "All tables",
