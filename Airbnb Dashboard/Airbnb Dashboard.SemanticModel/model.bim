@@ -150,12 +150,16 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "dataType": "string",
+            "dataType": "double",
             "lineageTag": "69e55fc6-b20c-4c74-8b18-786254b1f6e9",
             "sourceColumn": "latitude",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "longitude",
@@ -163,12 +167,16 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "dataType": "string",
+            "dataType": "double",
             "lineageTag": "24ef60fd-4639-40ff-80f9-12d8dea1839f",
             "sourceColumn": "longitude",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "property_type",
@@ -475,8 +483,8 @@
                 "    Source = Csv.Document(File.Contents(\"C:\\Users\\Damyan\\Desktop\\Work Docs\\Power BI\\Airbnb Dashboard\\Listings.csv\"),[Delimiter=\",\", Columns=33, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Promoted Headers\",{\"host_response_time\", \"host_response_rate\", \"host_acceptance_rate\", \"host_is_superhost\", \"host_total_listings_count\", \"host_has_profile_pic\"}),",
-                "    #\"Review Columns Changed Type to int64\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"review_scores_rating\", Int64.Type}, {\"review_scores_accuracy\", Int64.Type}, {\"review_scores_cleanliness\", Int64.Type}, {\"review_scores_checkin\", Int64.Type}, {\"review_scores_communication\", Int64.Type}, {\"review_scores_location\", Int64.Type}, {\"review_scores_value\", Int64.Type}}),",
-                "    #\"Added Column average_review_scores\" = Table.AddColumn(#\"Review Columns Changed Type to int64\", \"average_review_scores\", each (([review_scores_rating] / 10) + [review_scores_accuracy] + [review_scores_cleanliness] + [review_scores_checkin] + [review_scores_communication] + [review_scores_location] + [review_scores_value]) / 7),",
+                "    #\"Review Columns Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"review_scores_rating\", Int64.Type}, {\"review_scores_accuracy\", Int64.Type}, {\"review_scores_cleanliness\", Int64.Type}, {\"review_scores_checkin\", Int64.Type}, {\"review_scores_communication\", Int64.Type}, {\"review_scores_location\", Int64.Type}, {\"review_scores_value\", Int64.Type}}),",
+                "    #\"Added Column average_review_scores\" = Table.AddColumn(#\"Review Columns Changed Type\", \"average_review_scores\", each (([review_scores_rating] / 10) + [review_scores_accuracy] + [review_scores_cleanliness] + [review_scores_checkin] + [review_scores_communication] + [review_scores_location] + [review_scores_value]) / 7),",
                 "    #\"Changed Type average_review_scores\" = Table.TransformColumnTypes(#\"Added Column average_review_scores\",{{\"average_review_scores\", Int64.Type}}),",
                 "    #\"Renamed Column to average_review_score\" = Table.RenameColumns(#\"Changed Type average_review_scores\",{{\"average_review_scores\", \"average_review_score\"}}),",
                 "    #\"Removed Column district\" = Table.RemoveColumns(#\"Renamed Column to average_review_score\",{\"district\"}),",
@@ -484,9 +492,13 @@
                 "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Inserted Merged Column address\",{\"listing_id\", \"name\", \"host_id\", \"host_since\", \"host_location\", \"host_identity_verified\", \"neighbourhood\", \"city\", \"address\", \"latitude\", \"longitude\", \"property_type\", \"room_type\", \"accommodates\", \"bedrooms\", \"amenities\", \"price\", \"minimum_nights\", \"maximum_nights\", \"review_scores_rating\", \"review_scores_accuracy\", \"review_scores_cleanliness\", \"review_scores_checkin\", \"review_scores_communication\", \"review_scores_location\", \"review_scores_value\", \"instant_bookable\", \"average_review_score\"}),",
                 "    #\"Removed Empty Columns\" = Table.RemoveColumns(#\"Reordered Columns\",{\"average_review_score\", \"host_since\", \"host_location\", \"host_identity_verified\"}),",
                 "    #\"Removed Duplicates From host_id\" = Table.Distinct(#\"Removed Empty Columns\", {\"host_id\"}),",
-                "    #\"Changed Column Types\" = Table.TransformColumnTypes(#\"Removed Duplicates From host_id\",{{\"listing_id\", Int64.Type}, {\"host_id\", Int64.Type}, {\"accommodates\", Int64.Type}, {\"bedrooms\", Int64.Type}, {\"price\", Int64.Type}, {\"minimum_nights\", Int64.Type}, {\"maximum_nights\", Int64.Type}})",
+                "    #\"Changed Column Types\" = Table.TransformColumnTypes(#\"Removed Duplicates From host_id\",{{\"listing_id\", Int64.Type}, {\"host_id\", Int64.Type}, {\"accommodates\", Int64.Type}, {\"bedrooms\", Int64.Type}, {\"price\", Int64.Type}, {\"minimum_nights\", Int64.Type}, {\"maximum_nights\", Int64.Type}}),",
+                "    #\"Replaced latitude Values\" = Table.ReplaceValue(#\"Changed Column Types\",\".\",\",\",Replacer.ReplaceText,{\"latitude\"}),",
+                "    #\"Changed latitude  Type\" = Table.TransformColumnTypes(#\"Replaced latitude Values\",{{\"latitude\", type number}}),",
+                "    #\"Replaced longtitude Value\" = Table.ReplaceValue(#\"Changed latitude  Type\",\".\",\",\",Replacer.ReplaceText,{\"longitude\"}),",
+                "    #\"Changed longtitude Type\" = Table.TransformColumnTypes(#\"Replaced longtitude Value\",{{\"longitude\", type number}})",
                 "in",
-                "    #\"Changed Column Types\""
+                "    #\"Changed longtitude Type\""
               ],
               "type": "m"
             }

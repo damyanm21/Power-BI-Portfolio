@@ -11,12 +11,12 @@
         {
           "location": {
             "x": 512,
-            "y": 76.413116455078125
+            "y": 114.61967468261719
           },
           "nodeIndex": "Dim_Listings",
           "nodeLineageTag": "27ccc1bf-03db-479e-8651-a0044d3defb9",
           "size": {
-            "height": 701,
+            "height": 754,
             "width": 234
           },
           "zIndex": 2
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1459,
-            "y": 422.41311645507813
+            "y": 460.61967468261719
           },
           "nodeIndex": "Dim_Reviewers",
           "nodeLineageTag": "01d7ce99-8169-46d6-88a0-9a0ad0800115",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 1001,
-            "y": 368.41311645507813
+            "y": 406.61967468261719
           },
           "nodeIndex": "Fact_Reviews",
           "nodeLineageTag": "df9f2a34-7f96-4af6-9d58-29701f6a1aed",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 22,
-            "y": 216.97103881835938
+            "y": 255.17759704589844
           },
           "nodeIndex": "Dim_Hosts",
           "nodeLineageTag": "b427ac6e-252f-463b-8746-5923f3e077d1",
