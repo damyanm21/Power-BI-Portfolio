@@ -99,7 +99,8 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "e61929e4-d7d3-4090-8734-bd3d1cab0f32",
             "sourceColumn": "listing_id",
             "summarizeBy": "none"
@@ -203,11 +204,6 @@
                 "value": "Automatic"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "a319e020-610d-4fd3-b33c-162ccac3fcea",
@@ -222,10 +218,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "9640f941-e1b3-42e2-9b9f-60b13da340c7",
             "sourceColumn": "bedrooms",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "amenities",
@@ -248,11 +245,6 @@
                 "value": "Automatic"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "ebe53da7-f6bf-48f5-8cee-d1c0621f4f1d",
@@ -267,11 +259,6 @@
                 "value": "Automatic"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "520364b7-01dd-4fd3-bd3f-21c0a964d23e",
@@ -284,11 +271,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "DataType"
               }
             ],
             "dataType": "int64",
@@ -459,7 +441,8 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "c4bf49b7-52f8-48d2-b487-af3bb45db6df",
             "sourceColumn": "host_id",
             "summarizeBy": "none"
@@ -494,14 +477,16 @@
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Promoted Headers\",{\"host_response_time\", \"host_response_rate\", \"host_acceptance_rate\", \"host_is_superhost\", \"host_total_listings_count\", \"host_has_profile_pic\"}),",
                 "    #\"Review Columns Changed Type to int64\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"review_scores_rating\", Int64.Type}, {\"review_scores_accuracy\", Int64.Type}, {\"review_scores_cleanliness\", Int64.Type}, {\"review_scores_checkin\", Int64.Type}, {\"review_scores_communication\", Int64.Type}, {\"review_scores_location\", Int64.Type}, {\"review_scores_value\", Int64.Type}}),",
                 "    #\"Added Column average_review_scores\" = Table.AddColumn(#\"Review Columns Changed Type to int64\", \"average_review_scores\", each (([review_scores_rating] / 10) + [review_scores_accuracy] + [review_scores_cleanliness] + [review_scores_checkin] + [review_scores_communication] + [review_scores_location] + [review_scores_value]) / 7),",
-                "    #\"Renamed Column to average_review_score\" = Table.RenameColumns(#\"Added Column average_review_scores\",{{\"average_review_scores\", \"average_review_score\"}}),",
+                "    #\"Changed Type average_review_scores\" = Table.TransformColumnTypes(#\"Added Column average_review_scores\",{{\"average_review_scores\", Int64.Type}}),",
+                "    #\"Renamed Column to average_review_score\" = Table.RenameColumns(#\"Changed Type average_review_scores\",{{\"average_review_scores\", \"average_review_score\"}}),",
                 "    #\"Removed Column district\" = Table.RemoveColumns(#\"Renamed Column to average_review_score\",{\"district\"}),",
                 "    #\"Inserted Merged Column address\" = Table.AddColumn(#\"Removed Column district\", \"address\", each Text.Combine({[city], [neighbourhood]}, \", \"), type text),",
                 "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Inserted Merged Column address\",{\"listing_id\", \"name\", \"host_id\", \"host_since\", \"host_location\", \"host_identity_verified\", \"neighbourhood\", \"city\", \"address\", \"latitude\", \"longitude\", \"property_type\", \"room_type\", \"accommodates\", \"bedrooms\", \"amenities\", \"price\", \"minimum_nights\", \"maximum_nights\", \"review_scores_rating\", \"review_scores_accuracy\", \"review_scores_cleanliness\", \"review_scores_checkin\", \"review_scores_communication\", \"review_scores_location\", \"review_scores_value\", \"instant_bookable\", \"average_review_score\"}),",
                 "    #\"Removed Empty Columns\" = Table.RemoveColumns(#\"Reordered Columns\",{\"average_review_score\", \"host_since\", \"host_location\", \"host_identity_verified\"}),",
-                "    #\"Removed Duplicates From host_id\" = Table.Distinct(#\"Removed Empty Columns\", {\"host_id\"})",
+                "    #\"Removed Duplicates From host_id\" = Table.Distinct(#\"Removed Empty Columns\", {\"host_id\"}),",
+                "    #\"Changed Column Types\" = Table.TransformColumnTypes(#\"Removed Duplicates From host_id\",{{\"listing_id\", Int64.Type}, {\"host_id\", Int64.Type}, {\"accommodates\", Int64.Type}, {\"bedrooms\", Int64.Type}, {\"price\", Int64.Type}, {\"minimum_nights\", Int64.Type}, {\"maximum_nights\", Int64.Type}})",
                 "in",
-                "    #\"Removed Duplicates From host_id\""
+                "    #\"Changed Column Types\""
               ],
               "type": "m"
             }
