@@ -1,9 +1,0 @@
-{
-  "version": "1.0",
-  "datasetReference": {
-    "byPath": {
-      "path": "../Sales by Product Dashboard.Dataset"
-    },
-    "byConnection": null
-  }
-}
