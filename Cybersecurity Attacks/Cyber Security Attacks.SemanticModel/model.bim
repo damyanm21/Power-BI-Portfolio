@@ -1,0 +1,985 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"cybersecurity_attacks\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.129.905.0 (24.05)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "0f603b70-39aa-44c1-bd7e-9d145b3483e2",
+        "fromColumn": "Timestamp",
+        "fromTable": "cybersecurity_attacks",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_601bab76-4a9a-4e29-9610-517dd89b750a"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "cybersecurity_attacks",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "750a9a01-430a-4d48-a194-547352767ba4",
+            "sourceColumn": "Timestamp",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_601bab76-4a9a-4e29-9610-517dd89b750a"
+                },
+                "isDefault": true,
+                "relationship": "0f603b70-39aa-44c1-bd7e-9d145b3483e2"
+              }
+            ]
+          },
+          {
+            "name": "Source IP Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "20264c0b-5b22-4e34-9eb9-bc19ccfeb2a3",
+            "sourceColumn": "Source IP Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Destination IP Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4bc60fcf-eed8-49b4-bcb3-7c7ef78ed5d0",
+            "sourceColumn": "Destination IP Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Source Port",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "89f0d76e-da2c-49ca-94f3-42812919e149",
+            "sourceColumn": "Source Port",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Destination Port",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "547fe3d3-4a8a-4bd1-a5c3-253bdab05a93",
+            "sourceColumn": "Destination Port",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Protocol",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9d35fc9f-a0c9-44d8-a342-881a2424cea1",
+            "sourceColumn": "Protocol",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Packet Length",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fe5340b2-e4a6-4fba-b811-312046e11889",
+            "sourceColumn": "Packet Length",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Packet Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a7b6b65f-03f2-4602-86fa-ad69deaffd80",
+            "sourceColumn": "Packet Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Traffic Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad33cc06-4802-4aa8-9a5d-11c39fd6d219",
+            "sourceColumn": "Traffic Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Payload Data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d5a3847f-4f97-411d-9b22-258bda9cea62",
+            "sourceColumn": "Payload Data",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Malware Indicators",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "542a04cb-676f-45e7-9086-39a80691e7b2",
+            "sourceColumn": "Malware Indicators",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anomaly Scores",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "547a55f6-086d-4e54-9ab2-1cd714ae5692",
+            "sourceColumn": "Anomaly Scores",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Alerts/Warnings",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4cc17c94-127d-43d3-a777-fba610dbe310",
+            "sourceColumn": "Alerts/Warnings",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attack Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e39b5264-d9c5-4895-ac25-6c143bca82d7",
+            "sourceColumn": "Attack Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Attack Signature",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fef523aa-d44d-4476-a668-07c891daca95",
+            "sourceColumn": "Attack Signature",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Action Taken",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3cad8182-6265-440e-9d66-245a0da7cb66",
+            "sourceColumn": "Action Taken",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Severity Level",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ca04985a-e207-457d-95d3-41b25084fe5a",
+            "sourceColumn": "Severity Level",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "User Information",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8cf25792-4686-49ab-b0b8-b09d0ef7e76a",
+            "sourceColumn": "User Information",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Network Segment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "420dc1bc-6129-4f74-bf87-2c167841ed45",
+            "sourceColumn": "Network Segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Geo-location Data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7fa90d96-41ef-4433-8483-0983158a1d62",
+            "sourceColumn": "Geo-location Data",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Proxy Information",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e7f2618a-907d-4d66-8b89-d5415a0edb2c",
+            "sourceColumn": "Proxy Information",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Firewall Logs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da31531d-23c4-418d-a9b8-675abd31374e",
+            "sourceColumn": "Firewall Logs",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IDS/IPS Alerts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0950c668-07b2-4d57-a048-4d8e8aafd5bd",
+            "sourceColumn": "IDS/IPS Alerts",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Log Source",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5fb8fd8-6f04-4c73-b22f-04256a197013",
+            "sourceColumn": "Log Source",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Browser",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "63724c93-f261-4ad5-9d8e-0c55aed728c7",
+            "sourceColumn": "Browser",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Device/OS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4d76b2c0-64a3-4401-a4df-a6ed5aadc30d",
+            "sourceColumn": "Device/OS",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "96b2d9e1-fda8-42b8-a290-3c95fb069616",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bccf3b49-6fbb-4209-ac11-7dbd61abd6e0",
+            "sourceColumn": "Month",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1962bf54-7c4a-45de-9ff0-e3f7670db396",
+            "sourceColumn": "Day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Hour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2f891721-e071-423b-9ffe-41e7b7cb7ea1",
+            "sourceColumn": "Hour",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Minute",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cd9bbb20-3f7d-423e-9da6-1dca090a1b06",
+            "sourceColumn": "Minute",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Second",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7b393ead-a6dc-4688-bc48-829668e68a4d",
+            "sourceColumn": "Second",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DayOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dd2a33db-5c2f-470d-afcd-7e7afbf5086f",
+            "sourceColumn": "DayOfWeek",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "597ae81f-2a0e-47b4-be88-ca35fa2f7a0d",
+            "sourceColumn": "Id",
+            "summarizeBy": "count"
+          }
+        ],
+        "lineageTag": "13d863dc-62a9-49b8-b7a4-5604a0fd64b8",
+        "measures": [
+          {
+            "name": "Average Anomaly Score",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "AVERAGE(cybersecurity_attacks[Anomaly Scores])",
+            "lineageTag": "ad447d9f-1fd8-4ed8-a699-c640122c758c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "cybersecurity_attacks",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\Damyan\\Desktop\\Work Docs\\Power BI\\Cyber Security Attacks\\updated_cybersecurity_attacks.csv\"),[Delimiter=\",\", Columns=34, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"\", Int64.Type}, {\"Timestamp\", type datetime}, {\"Source IP Address\", type text}, {\"Destination IP Address\", type text}, {\"Source Port\", Int64.Type}, {\"Destination Port\", Int64.Type}, {\"Protocol\", type text}, {\"Packet Length\", Int64.Type}, {\"Packet Type\", type text}, {\"Traffic Type\", type text}, {\"Payload Data\", type text}, {\"Malware Indicators\", type text}, {\"Anomaly Scores\", type text}, {\"Alerts/Warnings\", type text}, {\"Attack Type\", type text}, {\"Attack Signature\", type text}, {\"Action Taken\", type text}, {\"Severity Level\", type text}, {\"User Information\", type text}, {\"Network Segment\", type text}, {\"Geo-location Data\", type text}, {\"Proxy Information\", type text}, {\"Firewall Logs\", type text}, {\"IDS/IPS Alerts\", type text}, {\"Log Source\", type text}, {\"Browser\", type text}, {\"Device/OS\", type text}, {\"Year\", Int64.Type}, {\"Month\", Int64.Type}, {\"Day\", Int64.Type}, {\"Hour\", Int64.Type}, {\"Minute\", Int64.Type}, {\"Second\", Int64.Type}, {\"DayOfWeek\", Int64.Type}}),",
+                "    #\"Removed Duplicates in Id\" = Table.Distinct(#\"Changed Type\", {\"\"}),",
+                "    #\"Renamed Column Id\" = Table.RenameColumns(#\"Removed Duplicates in Id\",{{\"\", \"Id\"}}),",
+                "    #\"Replaced \"\".\"\" with \"\",\"\" in Anomaly Scores\" = Table.ReplaceValue(#\"Renamed Column Id\",\".\",\",\",Replacer.ReplaceText,{\"Anomaly Scores\"}),",
+                "    #\"Changed Anomaly Scores type to Descimal\" = Table.TransformColumnTypes(#\"Replaced \"\".\"\" with \"\",\"\" in Anomaly Scores\",{{\"Anomaly Scores\", type number}})",
+                "in",
+                "    #\"Changed Anomaly Scores type to Descimal\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_ac82209f-36c1-4549-93cd-b40085ef611d",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "66675cf4-74be-492d-b0e8-f80d26790b2e",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "48d4631a-cabf-4d4a-8a78-b35040ea1f4c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "5377a69e-247b-48a7-9a6f-fd5d3ed86fc2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "da08be14-6ae7-42ca-afc6-2abb263c1418",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "bedc1824-01e8-4f94-91b6-64a5264c33ce",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "3cab1d33-b97a-464b-bb23-81b9d8004f6d",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7ed9cf54-6501-4a3f-8990-9fb199f58e1e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "3232d2f6-1fdc-471e-a7ec-3556645e8c10",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "48002e1e-489e-482b-98ff-6860b09edc41",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "c3cc4b6c-3f8f-469e-af34-f1cd252cdb82",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "f7b5fdda-9cbc-45a3-a21b-bff161f30d8b",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "4fc49da8-bc5e-49ec-83e3-0e037c2cb0be"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "dac17a9b-2e52-4a09-8f94-ffce1898c676",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_ac82209f-36c1-4549-93cd-b40085ef611d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_601bab76-4a9a-4e29-9610-517dd89b750a",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "04622cc3-ce6e-4714-95b7-ce296bb01eeb",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "db5bd375-3696-4a5b-b1c4-7341dd37879b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b9176f44-1d54-4778-a354-e5431d74c4e8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "47875df1-5c35-430d-8dd0-ee196d6664d7",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e0e4dce4-cfd1-4ad0-afaf-a9300c24ecaa",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "7ae267c8-9a65-4b8a-9fe1-83538a344fe7",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0464d74a-b150-4449-aa9c-9c11e2240f25",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "e9dffe62-555a-42f7-b22b-1182f4405b08",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "f83653c3-9695-4312-ab25-9712cfe7ac9f",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "82d809cf-c0a6-435a-a8ae-3bd5a0fc4f47",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "92d5d9a9-81fe-45e2-8490-3d75c51d52e3",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "303db993-c751-498f-bdef-e4e75d40f96b"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "cfb28577-52dd-4aaf-b494-67023e33b3e9",
+        "partitions": [
+          {
+            "name": "LocalDateTable_601bab76-4a9a-4e29-9610-517dd89b750a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('cybersecurity_attacks'[Timestamp])), 1, 1), Date(Year(MAX('cybersecurity_attacks'[Timestamp])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
