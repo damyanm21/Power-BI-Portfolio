@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Twitch Streamers Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2bd046bc-57aa-49e9-88bb-3defe55378e5"
+  }
+}
