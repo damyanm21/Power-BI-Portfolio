@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.124.2028.0 (23.12)"
+        "value": "2.129.1229.0 (24.05)"
       },
       {
         "name": "PBI_ProTooling",
@@ -25,7 +25,6 @@
         "name": "en-US",
         "linguisticMetadata": {
           "content": {
-            "DynamicImprovement": "HighConfidence",
             "Language": "en-US",
             "Version": "1.0.0"
           },
@@ -73,7 +72,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "75eb5e6f-1add-44f8-8d36-9f5e1b2be1b2",
@@ -96,7 +94,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "756d7219-c783-4b6d-b306-c70446cbeba0",
             "summarizeBy": "none",
@@ -117,7 +114,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "59529689-9296-4998-bbdc-32293d0095f1",
             "summarizeBy": "none",
@@ -159,7 +155,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "1531b190-6fe5-4f23-b5db-d1bb94a2d360",
             "summarizeBy": "none",
@@ -201,7 +196,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "8fed5422-0af7-44ac-add3-4d65d27e87d8",
             "summarizeBy": "none",
@@ -497,7 +491,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "d09ffe94-d0f1-42d4-b75a-341ac56e15da",
@@ -520,7 +513,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "6b914222-c389-4fa4-a24c-942a07ef0105",
             "summarizeBy": "none",
@@ -541,7 +533,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "869b2a7f-04e3-491b-bf58-0cddd409ee7a",
             "summarizeBy": "none",
@@ -583,7 +574,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "174e2be9-cf06-43f7-a265-b14189901f87",
             "summarizeBy": "none",
@@ -625,7 +615,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "eee9ed3f-f2b3-4a3a-ab91-63e33cf5375e",
             "summarizeBy": "none",
