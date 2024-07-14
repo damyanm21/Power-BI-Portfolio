@@ -1,0 +1,3287 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Inventory Levels (week 8 close)\",\"Sales forecast  (week 9+)\",\"Metrics\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.130.930.0 (24.06)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "inventory_levels_week_8_close": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "inventory levels (week 8 close)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "inventory level (week 8 close)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.SKU_short": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "SKU Short"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "SKU short": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "short": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "small": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "little": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "petite": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "squat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "diminutive": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "brief": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "quick": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "rapid": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "fleeting": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "passing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "SKU": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.ValStockValue_EUR": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "ValStockValue (EUR)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ValStockValue (EUR)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ValStockValue": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "Cost (EUR)": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.country_code": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Country Code"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "country code": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "country id": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "country key": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "nation code": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "location code": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.country_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Country Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "country name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "country": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "nation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "location": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "country nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "country title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "country label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "country tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "nation name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "location name": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.fiscal_week___year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Fiscal week / year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "fiscal week / year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "fiscal week": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "fiscal week year": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "fiscal week / yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.771
+                    }
+                  },
+                  {
+                    "fiscal week yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.fiscal_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Fiscal year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "fiscal year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "fiscal yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "fisc year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "accounting year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "budget year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "fiscal date": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "fiscal day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "tax year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.legacy_material_number": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Legacy Material number"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "legacy material number": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "material number": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "legacy material no": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "material no": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.material": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Material"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "material": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "physical": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "substantial": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "solid": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "central": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "substantive": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.material_description": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Material description"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "material description": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "description": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "material appearance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material descriptor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material explanation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material specification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "appearance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "descriptor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "explanation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "specification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "material account": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "material overview": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Product": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.quantity_total_stock_pallets": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Quantity Total Stock (pallets)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quantity total stock (pallets)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quantity total stock (pallet)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "quantity total stock": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.quantity_total_stock_unit_cases_UC": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Quantity Total Stock (Unit cases (UC))"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quantity total stock (unit cases (UC))": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "quantity total stock (unit case (UC))": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "quantity total stock (unit cases": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "Quantity (UC)": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "inventory_levels_week_8_close.week_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Inventory Levels (week 8 close)",
+                    "ConceptualProperty": "Week Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "week name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "week nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Week": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "metrics": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "metrics.cost_per_unit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Cost Per Unit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cost per unit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "cost": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "cost per module": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "cost per element": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "cost per entity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "cost per group": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cost per component": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cost per constituent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cost per item": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cost per part": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cost per section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "price per unit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  }
+                ]
+              },
+              "metrics.product_cost_forecast": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Product Cost Forecast"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "product cost forecast": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "forecast": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "cost forecast": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "product cost prediction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "product cost projection": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "cost prediction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "cost projection": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "product cost report": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "product cost estimate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "prediction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "projection": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "cost report": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "cost estimate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "metrics.total_inventory_product_cost": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Total Inventory Product Cost"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total inventory product cost": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "cost": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "product cost": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "inventory product cost": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "total inventory artifact cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "inventory artifact cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "artifact cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "aggregate inventory product cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "overall inventory product cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "total inventory item cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "total inventory merchandise cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "total inventory produce cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "inventory item cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "inventory merchandise cost": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "metrics.total_inventory_product_quantity_unit_cases": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Total Inventory Product Quantity (Unit Cases)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total inventory product quantity (unit cases)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "total inventory product quantity": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "sales_forecast__week_9": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sales forecast  (week 9+)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sale forecast  (week 9+)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "sales forecast (week 9+)": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "sale forecast (week 9+)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.7566
+                    }
+                  }
+                ]
+              },
+              "sales_forecast__week_9.SKU_short": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)",
+                    "ConceptualProperty": "SKU Short"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "SKU short": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "short": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "small": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "little": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "petite": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "squat": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "diminutive": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "brief": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "quick": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "rapid": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "fleeting": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "passing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "sales_forecast__week_9.demand_planning_forecast_unit_cases": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)",
+                    "ConceptualProperty": "Demand Planning Forecast (unit cases)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "demand planning forecast (unit cases)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "demand planning forecast (unit case)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "demand planning forecast": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "sales_forecast__week_9.material_description": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)",
+                    "ConceptualProperty": "Material description"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "material description": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "description": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "material appearance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material descriptor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material explanation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "material specification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "appearance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "descriptor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "explanation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "specification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "material account": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "material overview": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "sales_forecast__week_9.week_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)",
+                    "ConceptualProperty": "Week Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "week name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "week nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "week tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "sales_forecast__week_9.week_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales forecast  (week 9+)",
+                    "ConceptualProperty": "Week.year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "week.year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "week. yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "inventory_levels_week_8_close_has_SKU_short": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.SKU_short"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_SKU_shorts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.SKU_short": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.SKU_short"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_ValStockValue_EUR": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.ValStockValue_EUR"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_ValStockValue_EUR",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "inventory_levels_week_8_close.ValStockValue_EUR"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "ValStockValue_EUR_indicates_how_expensive_inventory_levels_week_8_close_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.ValStockValue_EUR": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.ValStockValue_EUR"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_country_code": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.country_code"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_country_codes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.country_code": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.country_code"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_country_name": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.country_name"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_country_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.country_name": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.country_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_fiscal_week___year": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.fiscal_week___year"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_fiscal_week___years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.fiscal_week___year": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.fiscal_week___year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_fiscal_year": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.fiscal_year"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_fiscal_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.fiscal_year": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.fiscal_year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_legacy_material_number": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.legacy_material_number"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_legacy_material_numbers",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.legacy_material_number": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.legacy_material_number"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_material": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.material"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_materials",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.material": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.material"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_material_description": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.material_description"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_material_descriptions",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.material_description": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.material_description"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_metrics_cost_per_unit": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "metrics.cost_per_unit"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_cost_per_unit",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "metrics.cost_per_unit"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "cost_per_unit_indicates_how_expensive_inventory_levels_week_8_close_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "metrics.cost_per_unit": {
+                    "Target": {
+                      "Entity": "metrics.cost_per_unit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_metrics_product_cost_forecast": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "metrics.product_cost_forecast"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_product_cost_forecast",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "metrics.product_cost_forecast": {
+                    "Target": {
+                      "Entity": "metrics.product_cost_forecast"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_metrics_total_inventory_product_cost": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "metrics.total_inventory_product_cost"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_total_inventory_product_cost",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "metrics.total_inventory_product_cost"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "total_inventory_product_cost_indicates_how_expensive_inventory_levels_week_8_close_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "metrics.total_inventory_product_cost": {
+                    "Target": {
+                      "Entity": "metrics.total_inventory_product_cost"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_metrics_total_inventory_product_quantity_unit_cases": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "metrics.total_inventory_product_quantity_unit_cases"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_total_inventory_product_quantity_unit_cases",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "metrics.total_inventory_product_quantity_unit_cases": {
+                    "Target": {
+                      "Entity": "metrics.total_inventory_product_quantity_unit_cases"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_quantity_total_stock_pallets": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.quantity_total_stock_pallets"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_quantity_total_stock_pallets",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.quantity_total_stock_pallets": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.quantity_total_stock_pallets"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_quantity_total_stock_unit_cases_UC": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.quantity_total_stock_unit_cases_UC"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_quantity_total_stock_unit_cases_UC",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.quantity_total_stock_unit_cases_UC": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.quantity_total_stock_unit_cases_UC"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_has_week_name": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.week_name"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_week_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.week_name": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.week_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_in_country_code": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "inventory_levels_week_8_close_are_in_country_codes",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.country_code"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.country_code": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.country_code"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "inventory_levels_week_8_close.country_code"
+                  }
+                },
+                "State": "Generated"
+              },
+              "inventory_levels_week_8_close_in_country_name": {
+                "Binding": {
+                  "ConceptualEntity": "Inventory Levels (week 8 close)"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "inventory_levels_week_8_close_are_in_country_names",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close.country_name"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "inventory_levels_week_8_close.country_name": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close.country_name"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "inventory_levels_week_8_close.country_name"
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_demand_planning_forecast_unit_cases": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sales_forecast__week_9.demand_planning_forecast_unit_cases"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_demand_planning_forecast_unit_cases",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  },
+                  "sales_forecast__week_9.demand_planning_forecast_unit_cases": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9.demand_planning_forecast_unit_cases"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_inventory_levels_week_8_close": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "inventory_levels_week_8_close"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_inventory_levels_week_8_close",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sales_forecast__week_9"
+                      },
+                      "Subject": {
+                        "Role": "inventory_levels_week_8_close"
+                      }
+                    },
+                    "ID": "inventory_levels_week_8_close_have_sales_forecast__week_9",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "inventory_levels_week_8_close": {
+                    "Target": {
+                      "Entity": "inventory_levels_week_8_close"
+                    }
+                  },
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_material_description": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sales_forecast__week_9.material_description"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_material_descriptions",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  },
+                  "sales_forecast__week_9.material_description": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9.material_description"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_metrics_product_cost_forecast": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "metrics.product_cost_forecast"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_product_cost_forecast",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "metrics.product_cost_forecast": {
+                    "Target": {
+                      "Entity": "metrics.product_cost_forecast"
+                    }
+                  },
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_week_name": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sales_forecast__week_9.week_name"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_week_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  },
+                  "sales_forecast__week_9.week_name": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9.week_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sales_forecast__week_9_has_week_year": {
+                "Binding": {
+                  "ConceptualEntity": "Sales forecast  (week 9+)"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sales_forecast__week_9.week_year"
+                      },
+                      "Subject": {
+                        "Role": "sales_forecast__week_9"
+                      }
+                    },
+                    "ID": "sales_forecast__week_9_have_week_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "sales_forecast__week_9": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9"
+                    }
+                  },
+                  "sales_forecast__week_9.week_year": {
+                    "Target": {
+                      "Entity": "sales_forecast__week_9.week_year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_46ed4589-b196-44ac-a82e-14a1d3aaa4cd",
+        "fromColumn": "SKU Short",
+        "fromTable": "Sales forecast  (week 9+)",
+        "toColumn": "SKU Short",
+        "toTable": "Inventory Levels (week 8 close)"
+      }
+    ],
+    "sourceQueryCulture": "bg-BG",
+    "tables": [
+      {
+        "name": "DateTableTemplate_515bb2b4-834b-4ad2-b6ef-64dbba081d58",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "1ae466ff-426f-4963-9d49-4e80fce01cb7",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e61516c4-fc9f-4b0e-94ae-b0f22e4704e5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "90eb0804-4dd5-44c2-aa43-370e5a3caefa",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "d9bb03e4-fe6c-4e8b-8d51-e845aa2f539f",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "62b3eec2-9603-4ce5-b56d-ea13489c963e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "b60f0db8-6f40-4d49-854a-802d6ec97131",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cb950a46-e0f2-45fb-bbee-88b6d0ee288e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "88484f06-0026-418f-a441-2af9178811d4",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "7f82b758-22e7-4133-8784-dac833ea57d1",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "ce3308c0-33ca-4685-b016-a5d8b5d35651",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "8cde8a46-1d75-4979-b5f2-e57ff74437dd",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "dce8df57-8721-4921-ba8b-beb00742476f"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "19d6d56d-ff8f-4c45-9c0b-df45bc5e42d4",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_515bb2b4-834b-4ad2-b6ef-64dbba081d58",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Inventory Levels (week 8 close)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Country Code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "594ca008-1d36-46c3-aae0-2b3fead9957c",
+            "sourceColumn": "Country Code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fiscal year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "233f7175-971f-4675-9748-89ba5e70dd79",
+            "sourceColumn": "Fiscal year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fiscal week / year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e1770531-20dc-49bf-bdaa-1a5915a117b1",
+            "sourceColumn": "Fiscal week / year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Legacy Material number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f7dacc69-f727-4478-ad12-830f32a21ed6",
+            "sourceColumn": "Legacy Material number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SKU Short",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "63415381-6cf4-41e2-9276-d75d29280bc7",
+            "sourceColumn": "SKU Short",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Material",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "75da4135-e25c-41b5-8a3a-810588e0e75e",
+            "sourceColumn": "Material",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Material description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98f2d57f-36c0-4afb-8da7-214258ec0c36",
+            "sourceColumn": "Material description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quantity Total Stock (pallets)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fda10877-52d5-4912-beb4-d908bdd8e64b",
+            "sourceColumn": "Quantity Total Stock (pallets)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quantity Total Stock (Unit cases (UC))",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "int64",
+            "lineageTag": "cee086ca-0a43-4d31-8491-a74b17197577",
+            "sourceColumn": "Quantity Total Stock (Unit cases (UC))",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValStockValue (EUR)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "lineageTag": "3a008a38-242e-453b-b6e9-8cde5e08a1c8",
+            "sourceColumn": "ValStockValue (EUR)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "89ab970f-5ad2-44a3-b47f-f3dbe6b85b24",
+            "sourceColumn": "Country Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "654d02c1-f595-4274-98d4-0fd7c6b06a83",
+            "sourceColumn": "Week Name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "636e0b0b-212d-4852-9e7f-f4568d7f6406",
+        "partitions": [
+          {
+            "name": "Inventory Levels (week 8 close)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Damyan\\Desktop\\Work Docs\\Power BI\\SC Case Study Dashboard\\SC Case Study 1.xlsx\"), null, true),",
+                "    #\"Inventory Levels (week 8 close)_Sheet\" = Source{[Item=\"Inventory Levels (week 8 close)\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Inventory Levels (week 8 close)_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Country\", type text}, {\"Fiscal year\", Int64.Type}, {\"Fiscal week / year\", type text}, {\"Legacy Material number\", type text}, {\"SKU Short\", Int64.Type}, {\"Material\", Int64.Type}, {\"Material description\", type text}, {\"Quantity Total Stock (pallets)\", type number}, {\"Quantity Total Stock (Unit cases (UC))\", type number}, {\"ValStockValue (EUR)\", type number}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Changed Type\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Duplicated Column\",{{\"Country - Copy\", \"Country Name\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns\",\"GB\",\"Great Britain\",Replacer.ReplaceText,{\"Country Name\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Replaced Value\",{{\"Country\", \"Country Code\"}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Renamed Columns1\",{{\"Quantity Total Stock (Unit cases (UC))\", Int64.Type}}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Changed Type1\", \"Fiscal week / year\", \"Fiscal week / year - Copy\"),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Duplicated Column1\",{{\"Fiscal week / year - Copy\", \"Week Name\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns2\",\"008.2023\",\"Week 8\",Replacer.ReplaceText,{\"Week Name\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales forecast  (week 9+)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SKU Short",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b4159d7d-b7ef-4999-8ba4-600bf80ffb2d",
+            "sourceColumn": "SKU Short",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Material description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "76868c31-5a8c-492f-b338-4b0536ea5f05",
+            "sourceColumn": "Material description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week.year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6fac9cca-744b-45f2-94fb-b62aaf1d5dbf",
+            "sourceColumn": "Week.year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Demand Planning Forecast (unit cases)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d0ec8a97-a87a-4441-9c61-1112981b4cd8",
+            "sourceColumn": "Demand Planning Forecast (unit cases)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Week Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eb587e92-e5db-4f80-b9d0-2ed68dc48368",
+            "sortByColumn": "Week.year",
+            "sourceColumn": "Week Name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "11e937a4-d6d4-43b2-8ed8-0dab1ae6ea91",
+        "partitions": [
+          {
+            "name": "Sales forecast  (week 9+)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Damyan\\Desktop\\Work Docs\\Power BI\\SC Case Study Dashboard\\SC Case Study 1.xlsx\"), null, true),",
+                "    #\"Sales forecast  (week 9+)_Sheet\" = Source{[Item=\"Sales forecast  (week 9+)\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Sales forecast  (week 9+)_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"SKU Short\", Int64.Type}, {\"Material description\", type text}, {\"Week.year\", type text}, {\"Demand Planning Forecast (unit cases)\", type number}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Changed Type\",{{\"Demand Planning Forecast (unit cases)\", Int64.Type}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Changed Type1\", \"Week.year\", \"Week.year - Copy\"),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Duplicated Column\",\"009.2023\",\"Week 9\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"010.2023\",\"Week 10\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"011.2023\",\"Week 11\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"012.2023\",\"Week 12\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\"013.2023\",\"Week 13\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"014.2023\",\"Week 14\",Replacer.ReplaceText,{\"Week.year - Copy\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Replaced Value5\",{{\"Week.year - Copy\", \"Week Name\"}}),",
+                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Renamed Columns\",\"015.2023\",\"Week 15\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value7\" = Table.ReplaceValue(#\"Replaced Value6\",\"016.2023\",\"Week 16\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value8\" = Table.ReplaceValue(#\"Replaced Value7\",\"017.2023\",\"Week 17\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value9\" = Table.ReplaceValue(#\"Replaced Value8\",\"018.2023\",\"Week 18\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value10\" = Table.ReplaceValue(#\"Replaced Value9\",\"019.2023\",\"Week 19\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value11\" = Table.ReplaceValue(#\"Replaced Value10\",\"020.2023\",\"Week 20\",Replacer.ReplaceText,{\"Week Name\"}),",
+                "    #\"Replaced Value12\" = Table.ReplaceValue(#\"Replaced Value11\",\"021.2023\",\"Week 21\",Replacer.ReplaceText,{\"Week Name\"})",
+                "in",
+                "    #\"Replaced Value12\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Metrics",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "bb8ac493-da66-4372-81ac-3d3074aa996f",
+        "measures": [
+          {
+            "name": "Total Inventory Product Quantity (Unit Cases)",
+            "expression": [
+              "",
+              "SUM('Inventory Levels (week 8 close)'[Quantity Total Stock (Unit cases (UC))])"
+            ],
+            "formatString": "0.0",
+            "lineageTag": "33059a6c-4b69-44cd-b838-5c1eb480b56e"
+          },
+          {
+            "name": "Total Inventory Product Cost",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "SUM('Inventory Levels (week 8 close)'[ValStockValue (EUR)])"
+            ],
+            "lineageTag": "47aa5ce1-c499-416a-96d5-ff8bcb5356b7"
+          },
+          {
+            "name": "Cost Per Unit",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM('Inventory Levels (week 8 close)'[ValStockValue (EUR)]),",
+              "    SUM('Inventory Levels (week 8 close)'[Quantity Total Stock (unit cases (UC))]),",
+              "    0",
+              ")"
+            ],
+            "lineageTag": "31c6b914-8770-42dc-b56c-974247695c87"
+          },
+          {
+            "name": "Product Cost Forecast",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "SUMX(",
+              "    'Sales forecast  (week 9+)',",
+              "    'Sales forecast  (week 9+)'[Demand Planning Forecast (unit cases)] * [Cost Per Unit]",
+              ")"
+            ],
+            "lineageTag": "68406816-ad9f-4202-892f-6c6081ea7e24"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Metrics",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
