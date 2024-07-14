@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 459,
+            "y": 588.1875
+          },
+          "nodeIndex": "ASIN",
+          "nodeLineageTag": "9d268a43-d57a-4e07-8939-ac2fabcc5ae6",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1048,
+            "y": 510.6875
+          },
+          "nodeIndex": "Sales Data",
+          "nodeLineageTag": "c66c681b-8d5e-4192-80e8-96a6d77934a7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1347,
+            "y": 69.1875
+          },
+          "nodeIndex": "Metrics",
+          "nodeLineageTag": "cfb22f83-e51b-4f02-8c9f-78ff5a9622d5",
+          "size": {
+            "height": 215,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 460,
+            "y": 222.3125
+          },
+          "nodeIndex": "inventory",
+          "nodeLineageTag": "064c63ff-563c-4d08-9c05-62856be79b41",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 3
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
