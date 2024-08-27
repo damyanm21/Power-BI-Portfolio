@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 239.62353515625
+          },
+          "nodeIndex": "General Data",
+          "nodeLineageTag": "fd355ba7-416c-48bf-b2e3-22bab16acdf5",
+          "size": {
+            "height": 416,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 861,
+            "y": 217.62353515625
+          },
+          "nodeIndex": "Plant Data",
+          "nodeLineageTag": "1ab05ffa-8b76-4c0f-9651-b5436c6fb6af",
+          "size": {
+            "height": 464,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1436,
+            "y": 479.12353515625
+          },
+          "nodeIndex": "Country",
+          "nodeLineageTag": "d2502f3c-1c97-4d38-8453-a5e7baf85492",
+          "size": {
+            "height": 184,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1553,
+            "y": 0
+          },
+          "nodeIndex": "Measures Table",
+          "nodeLineageTag": "e768e12c-64ea-47c6-acaa-a2a14921831a",
+          "size": {
+            "height": 232,
+            "width": 234
+          },
+          "zIndex": 2
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

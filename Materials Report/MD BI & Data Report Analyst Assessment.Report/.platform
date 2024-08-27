@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "MD BI & Data Report Analyst Assessment"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2a897dc5-0600-4d3f-9ae2-5c73c1a89ddd"
+  }
+}
