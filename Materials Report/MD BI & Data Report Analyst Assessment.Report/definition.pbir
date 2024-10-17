@@ -1,9 +1,0 @@
-{
-  "version": "4.0",
-  "datasetReference": {
-    "byPath": {
-      "path": "../MD BI & Data Report Analyst Assessment.SemanticModel"
-    },
-    "byConnection": null
-  }
-}
